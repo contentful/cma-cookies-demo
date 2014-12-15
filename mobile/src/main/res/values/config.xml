@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="cf_space_id">SPACE-ID</string>
+  <string name="cf_content_type_id">CONTENT-TYPE-ID</string>
+  <string name="cf_token_cda">CDA-ACCESS-TOKEN</string>
+  <string name="cf_token_cma">CMA-ACCESS-TOKEN</string>
+</resources>
