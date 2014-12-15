@@ -91,9 +91,9 @@ public class CookieService extends IntentService {
     RetrofitError error = null;
 
     try {
-      CDAArray result = Clients.cda().entries().fetchAll(new HashMap<String, String>() {{
+      CDAArray result = Clients.cda().entries().fetchAll(new HashMap<String, String>() { {
         put("limit", "1");
-      }});
+      } });
 
       int total = result.getTotal();
       if (total == 0) {
@@ -101,10 +101,10 @@ public class CookieService extends IntentService {
       } else {
         final int offset = new Random().nextInt(total);
 
-        result = Clients.cda().entries().fetchAll(new HashMap<String, String>() {{
+        result = Clients.cda().entries().fetchAll(new HashMap<String, String>() { {
           put("limit", "1");
           put("skip", Integer.toString(offset));
-        }});
+        } });
 
         cookie = (String) ((CDAEntry) result.getItems().get(0)).getFields().get("text");
       }

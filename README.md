@@ -1,5 +1,7 @@
 ## CMA Cookies Demo
 
+[![Build Status](https://travis-ci.org/contentful/cma-cookies-demo.svg)](https://travis-ci.org/contentful/cma-cookies-demo/builds#)
+
 This app illustrates basic usage of the Management API SDK from the context of an Android Wear project.
 
 ## Intro:
