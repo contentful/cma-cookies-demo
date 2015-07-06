@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 21
-  buildToolsVersion "21.1.1"
+  compileSdkVersion 22
+  buildToolsVersion "23.0.0 rc2"
 
   defaultConfig {
     applicationId "com.contentful.androidcookies"
-    minSdkVersion 14
-    targetSdkVersion 21
+    minSdkVersion 20
+    targetSdkVersion 22
     versionCode 1
     versionName "1.0"
   }
@@ -28,9 +28,9 @@ dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
   wearApp project(':wear')
   compile project(':shared')
-  compile 'com.android.support:appcompat-v7:21.0.2'
+  compile 'com.android.support:appcompat-v7:22.2.0'
   compile 'com.contentful.java:cma-sdk:0.9.1'
-  compile 'com.contentful.java:java-sdk:2.0.0'
+  compile 'com.contentful.java:java-sdk:2.0.4'
 }
 
 apply from: rootProject.file('gradle/checkstyle.gradle')
